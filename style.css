@@ -334,17 +334,10 @@ imagensNovidades{
     justify-content: center;
     padding: 60px;
 }
-<<<<<<< HEAD
 .formBotao{
     display: flex;
     justify-content: center;
 }
 .formDados{
     padding: 10px;
-=======
-
-.botaoFormulario{
-    display: flex;
-    justify-content: center;
->>>>>>> 1c1ff86ab05aaabc9a728b3081e5c4b870f7d433
 }
