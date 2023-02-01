@@ -45,31 +45,36 @@
                     <label for="nome">
                         NOME COMPLETO / RAZÃO SOCIAL
                     </label><br>
-                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados">
+                    <input type="text" placeholder="   Digite seu nome completo  " id="nome" name="username" class="dados required">
+                    <span class="span-required"> Mínimo 6 Caracteres </span>
                 </div>
                 <div class="formDados">
                     <label for="documento">
                         CPF / CNPJ
                     </label><br>
-                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados">
+                    <input type="number"  placeholder=" Digite seu documento  " id="documento" name="doc" class="dados required">
+                    <span class="span-required"> Digite Somente números </span>
                 </div>
                 <div class="formDados">
                     <label for="contato">
                         DDD + CELULAR
                     </label><br>
-                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados" >
+                    <input type="tel" placeholder=" Telefone para contato " id="contato" name="contact" class="dados required">
+                    <span class="span-required"> Digite Somente números </span>
                 </div>
                 <div class="formDados">
                     <label for="email">
                         E-MAIL
                     </label><br>
-                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados">
+                    <input type="email" placeholder=" Seu melhor E-mail: " id="email" name="mailto" class="dados required">
+                    <span class="span-required"> Digite Um email válido </span>
                 </div>
                 <div class="formDados">
                     <label for="cidade">
                         CIDADE
                     </label><br>
-                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados" >
+                    <input type="text" placeholder="Informe sua cidade" id="cidade" name="city" class="dados required">
+                    <span class="span-required">   </span>
                 </div>
                     <br>
                 <div class="formBotao">
@@ -110,4 +115,13 @@
         </div>
     </footer> 
 </body>
+<script>
+
+
+const form = document.getElementById('formCadastro');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+
+</script>
 </html>

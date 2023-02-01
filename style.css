@@ -8,9 +8,11 @@
 .menu{
     background: #1C7A2B;
     padding: 10px 30px;
+    position:initial;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .logoTopo{
     width: 85px;
@@ -344,3 +346,4 @@
 .formDados{
     padding: 10px;
 }
+
